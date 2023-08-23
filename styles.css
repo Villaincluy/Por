@@ -1,0 +1,347 @@
+/* Tamaño del cuadro para que todos los elementos incluyan relleno y bordes */
+* {
+  box-sizing: border-box;
+  }
+
+/* Imágenes responsivas */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilo general para todo el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+/* Estilo para el contenedor de cuadrícula al cuerpo*/
+  .grid-container {
+
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+  }
+  
+/* Estilo para el encabezado */
+  .header {
+    grid-area: header;
+    display: flex;
+    height: 120px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.8);
+    background-image: url("./img/logo.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  /* Estilo para el h1 del encabezado */
+  .header h1 {
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 10rem;
+    
+  }
+
+  /* Estilo para la p del encabezado */
+  .header p {
+    color: white;
+    margin: auto;
+    font-size: 1.1rem;
+    max-width: 30ch;
+    padding-left: 1rem;
+  }
+
+  /* Estilo para la navegación */
+  nav {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    color: white;
+    margin-right: 2rem;
+  }
+
+  /* Estilo para la lista desordenada en la navegación */
+  ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  /* Estilo para enlaces en la navegación */
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+  }
+
+  /* Estilo para los elementos de la lista en la navegación */
+  li {
+    display: inline-block;
+    width: 10ch;
+  }
+
+  /* Estilo para el efecto de color del enlace */
+  li:hover a {
+    color: black;
+    background: white;
+  }
+  
+  /* Estilo para el contenido principal */
+  main {
+    grid-area: main;
+    display: flex;
+  }
+  
+  /* Estilo para el contenedor dentro de la sección 1 */
+  .section1 {
+    margin-top: 0;
+  }
+
+  /* Diseño de cajas dentro de la sección */
+  .contenedor {
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+  }
+
+  /* Diseño de cajas dentro de la sección 1 */
+  .caja {
+    width: 23%;
+    background-color: #464646;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    font-size: medium;
+  }
+
+  /* Estilo para el efecto de desplazamiento de cuadro */
+  .caja:hover {
+    transform: translateY(20px);
+    transition-delay: 100ms;
+  }
+
+  /* Estilo para botón de compra */
+  .boton-compra {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    background-color: black;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Estilo para el efecto de color del botón de compra */
+  .boton-compra:hover {
+    background-color: #FFFFFF;
+    color: black;
+  }
+
+  /* FORMULARIO */
+  #purchase-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  /* Estilo para etiquetas dentro del formulario de compra */
+  #purchase-form label {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilo para elementos de entrada de formulario */
+  #purchase-form input[type="text"],
+  #purchase-form input[type="email"],
+  #purchase-form input[type="tel"],
+  #purchase-form textarea {
+    border: 2px solid #000;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para la entrada de la casilla de verificación del formulario */
+  #purchase-form input[type="checkbox"] {
+    margin-top: 10px;
+  }
+  
+  /* Estilo para el botón de envío de formulario */
+  #purchase-form input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el efecto de color del botón de envío de formulario */
+  #purchase-form input[type="submit"]:hover {
+    background-color: #333;
+  }
+
+  /* Estilo para el pie de página */
+  footer {
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    height: 120px;
+  }
+  
+  /* Estilo para el contenedor de pie de página */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilo para el contenido del pie de página */
+  .footer-content {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  /* Estilo para encabezado de pie de página */
+  .footer-content h3 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  /* Diseño de iconos de redes sociales */
+  .social-icons {
+    display: flex;
+  }
+  
+  /* Estilo para enlaces de iconos de redes sociales */
+  .social-icons a {
+    margin-right: 20px;
+  }
+  
+  /* Diseño de iconos de redes sociales */
+  .social-icons img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  /* Diseño receptivo para dispositivos de hasta 600 px de ancho */
+  @media only screen and (max-width: 600px) {
+    .header {
+      height: 100px;
+      align-items: center;
+      flex-direction: column;
+      background-image: none;
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 0;
+      padding-top: 25px;
+    }
+
+    .header p {
+      display: none;
+    }
+
+    nav {
+      justify-content: center;
+      height: 60px;
+      width: 100%;
+      align-items: center;
+      margin: 0;
+    }
+
+    ul {
+      align-items: center;
+      padding: 0;
+    }
+
+    a {
+      font-size: 1rem;
+    }
+
+    .caja {
+      width: 90%;
+    }
+    
+    
+
+   
+  }
+  
+  /* Diseño responsivo para dispositivos entre 601px y 1024px de ancho */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Para table de 601 a 1024 */
+    .header {
+      height: 140px;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      background-image: none;
+    }
+
+    .header h1 {
+      font-size: 1.5rem;
+      margin: 20px;
+      
+    }
+
+    .header p {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      height: auto;
+    }
+
+    ul {
+      text-align: center;
+      margin: 0;
+    }
+
+    .section1 {
+      margin: 5px;
+    }
+
+    .caja {
+      display: table-cell;
+      width: 40%;
+      margin: 10px;
+      
+    }
+    
+    
+    
+  }
+
+  
+  @media only screen and (min-width: 1025px) {
+    /* Computador */
+  }
+  
